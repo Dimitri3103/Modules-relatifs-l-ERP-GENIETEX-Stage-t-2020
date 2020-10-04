@@ -1,0 +1,359 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6B7F2D0B-92D8-4BC4-9AC2-2C76213CEF47}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WindowsApp1.My.MyApplication</StartupObject>
+    <RootNamespace>WindowsApp1</RootNamespace>
+    <AssemblyName>WindowsApp1</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>WindowsApp1.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>WindowsApp1.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Guna.UI">
+      <HintPath>..\..\..\..\Desktop\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna.UI-Framework-Lib-master\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2">
+      <HintPath>..\..\..\..\Desktop\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna.UI-Framework-Lib-master\Guna.UI2 WinForms\.net 4.0\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConnexionBaseDonnées.vb" />
+    <Compile Include="CrystalReport1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport2.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport3.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport3.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DASHBOARD.Designer.vb">
+      <DependentUpon>DASHBOARD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DASHBOARD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ETATSTOCKMAGASIN.Designer.vb">
+      <DependentUpon>ETATSTOCKMAGASIN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ETATSTOCKMAGASIN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ETATSTOCKPIECE.Designer.vb">
+      <DependentUpon>ETATSTOCKPIECE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ETATSTOCKPIECE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.vb">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GMAOATELIER.Designer.vb">
+      <DependentUpon>GMAOATELIER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GMAOATELIER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GMAOPLANMAINTENANCE.Designer.vb">
+      <DependentUpon>GMAOPLANMAINTENANCE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GMAOPLANMAINTENANCE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GMAOPLANSMAINTENANCES.Designer.vb">
+      <DependentUpon>GMAOPLANSMAINTENANCES.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GMAOPLANSMAINTENANCES.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GMAORESPONSABLEMAINTENANCE.Designer.vb">
+      <DependentUpon>GMAORESPONSABLEMAINTENANCE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GMAORESPONSABLEMAINTENANCE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IMPRESSIONBONMVT.Designer.vb">
+      <DependentUpon>IMPRESSIONBONMVT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IMPRESSIONBONMVT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IMPRESSIONETATSTOCK.Designer.vb">
+      <DependentUpon>IMPRESSIONETATSTOCK.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IMPRESSIONETATSTOCK.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IMPRESSIONLISTEMVTPIECES.Designer.vb">
+      <DependentUpon>IMPRESSIONLISTEMVTPIECES.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IMPRESSIONLISTEMVTPIECES.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LISTEMVTSPIECES.Designer.vb">
+      <DependentUpon>LISTEMVTSPIECES.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LISTEMVTSPIECES.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGIN.Designer.vb">
+      <DependentUpon>LOGIN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LOGIN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MVTENTREE.Designer.vb">
+      <DependentUpon>MVTENTREE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MVTENTREE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MVTSORTIE.Designer.vb">
+      <DependentUpon>MVTSORTIE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MVTSORTIE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MVTTRANSFERT.Designer.vb">
+      <DependentUpon>MVTTRANSFERT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MVTTRANSFERT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="myimportDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>myimportDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GMAOPIECEDERECHANGE.Designer.vb">
+      <DependentUpon>GMAOPIECEDERECHANGE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GMAOPIECEDERECHANGE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TABLEAUDEBORD.Designer.vb">
+      <DependentUpon>TABLEAUDEBORD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TABLEAUDEBORD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport2.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport3.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport3.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DASHBOARD.resx">
+      <DependentUpon>DASHBOARD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ETATSTOCKMAGASIN.resx">
+      <DependentUpon>ETATSTOCKMAGASIN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ETATSTOCKPIECE.resx">
+      <DependentUpon>ETATSTOCKPIECE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GMAOATELIER.resx">
+      <DependentUpon>GMAOATELIER.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GMAOPLANMAINTENANCE.resx">
+      <DependentUpon>GMAOPLANMAINTENANCE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GMAOPLANSMAINTENANCES.resx">
+      <DependentUpon>GMAOPLANSMAINTENANCES.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GMAORESPONSABLEMAINTENANCE.resx">
+      <DependentUpon>GMAORESPONSABLEMAINTENANCE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IMPRESSIONBONMVT.resx">
+      <DependentUpon>IMPRESSIONBONMVT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IMPRESSIONETATSTOCK.resx">
+      <DependentUpon>IMPRESSIONETATSTOCK.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IMPRESSIONLISTEMVTPIECES.resx">
+      <DependentUpon>IMPRESSIONLISTEMVTPIECES.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LISTEMVTSPIECES.resx">
+      <DependentUpon>LISTEMVTSPIECES.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOGIN.resx">
+      <DependentUpon>LOGIN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MVTENTREE.resx">
+      <DependentUpon>MVTENTREE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MVTSORTIE.resx">
+      <DependentUpon>MVTSORTIE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MVTTRANSFERT.resx">
+      <DependentUpon>MVTTRANSFERT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GMAOPIECEDERECHANGE.resx">
+      <DependentUpon>GMAOPIECEDERECHANGE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TABLEAUDEBORD.resx">
+      <DependentUpon>TABLEAUDEBORD.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="myimportDataSet.xsc">
+      <DependentUpon>myimportDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="myimportDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>myimportDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="myimportDataSet.xss">
+      <DependentUpon>myimportDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="myimport.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Dashboard.png" />
+    <Content Include="Resources\LogOut.png" />
+    <Content Include="Resources\Settings.png" />
+    <Content Include="Resources\Stock.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

@@ -1,0 +1,3 @@
+﻿Public Class GMAOPIECEDERECHANGE
+
+End Class
